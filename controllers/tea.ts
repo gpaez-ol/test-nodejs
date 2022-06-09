@@ -38,32 +38,7 @@ const newTea = (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-//DELETE '/tea'
-const deleteAllTea = (req: Request, res: Response, next: NextFunction) => {
-  res.json({ message: "DELETE all tea" });
-};
-
-//GET '/tea/:name'
-const getOneTea = (req: Request, res: Response, next: NextFunction) => {
-  console.log(req.params.name); // its bringing it
-  res.json({ message: "GET 1 tea" });
-};
-
-//POST '/tea/:name'
-const newComment = (req: Request, res: Response, next: NextFunction) => {
-  res.json({ message: "POST 1 tea comment" });
-};
-
-//DELETE '/tea/:name'
-const deleteOneTea = (req: Request, res: Response, next: NextFunction) => {
-  res.json({ message: "DELETE 1 tea" });
-};
-
 module.exports = {
   getAllTea,
   newTea,
-  deleteAllTea,
-  getOneTea,
-  newComment,
-  deleteOneTea,
 };
